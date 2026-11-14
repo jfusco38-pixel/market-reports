@@ -46,7 +46,16 @@ table.mt td{text-align:right;padding:4px;border-top:1px solid #1f2937;white-spac
 table.mt td.tk small{display:block;color:#9ca3af;font-weight:400;font-size:10.5px}
 footer{font-size:11.5px;color:#9ca3af} footer p{margin:6px 0} a{color:#93c5fd}
 @media (max-width:420px){.row{grid-template-columns:1.1fr 64px 0.9fr 54px} .spark{width:64px}}
-</style></head><body><div class="wrap">
+.tick-wrap{overflow:hidden;background:#0b0f17;border-bottom:1px solid #1f2937;margin:0 -12px 8px;}
+.tick-track{display:flex;width:max-content;animation:tick 45s linear infinite}
+.tick-wrap:hover .tick-track{animation-play-state:paused}
+.tick-seg{display:flex;align-items:center;white-space:nowrap;padding:7px 0}
+.tick-seg span{padding:0 16px;font-size:12.5px;color:#e5e7eb;font-variant-numeric:tabular-nums}
+.tick-seg b{color:#93c5fd;font-weight:600;margin-right:4px} .tick-seg i{font-style:normal;color:#9ca3af;margin-left:4px}
+.tick-seg .sep{color:#374151;padding:0 4px}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.tick-track{animation:none}}
+</style></head><body><div class="tick-wrap" aria-label="Interest rates ticker, as of 2026-11-13 close"><div class="tick-track"><div class="tick-seg"><span><b>13-week T-bill</b> 4.12% <i>-1 bp 1D</i></span><span><b>5-year Treasury</b> 4.98% <i>+4 bp 1D</i></span><span><b>10-year Treasury</b> 5.15% <i>+5 bp 1D</i></span><span><b>30-year Treasury</b> 5.48% <i>+5 bp 1D</i></span><span><b>Fed funds (effective)</b> 3.88% <i>+0 bp 1D</i></span><span class="sep">◆</span></div><div class="tick-seg" aria-hidden="true"><span><b>13-week T-bill</b> 4.12% <i>-1 bp 1D</i></span><span><b>5-year Treasury</b> 4.98% <i>+4 bp 1D</i></span><span><b>10-year Treasury</b> 5.15% <i>+5 bp 1D</i></span><span><b>30-year Treasury</b> 5.48% <i>+5 bp 1D</i></span><span><b>Fed funds (effective)</b> 3.88% <i>+0 bp 1D</i></span><span class="sep">◆</span></div></div></div><div class="wrap">
 <h1>🧭 AI Money Map</h1>
 <div class="sub">Fri 11/13 close · 13 layers / 75 stocks vs SPY (-2.3% 1M) · data fetched 2026-11-13 16:31 ET · next update Tue 11/17 4:30 PM ET</div>
 <nav><a href="#now">Where it is</a><a href="#going">Where it's going</a><a href="#share">$ share</a><a href="#been">Where it's been</a><a href="#layers">Stocks</a></nav>
