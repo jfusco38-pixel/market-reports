@@ -46,7 +46,7 @@ table.mt td{text-align:right;padding:4px;border-top:1px solid #1f2937;white-spac
 table.mt td.tk small{display:block;color:#9ca3af;font-weight:400;font-size:10.5px}
 footer{font-size:11.5px;color:#9ca3af} footer p{margin:6px 0} a{color:#93c5fd}
 @media (max-width:420px){.row{grid-template-columns:1.1fr 64px 0.9fr 54px} .spark{width:64px}}
-.tick-wrap{overflow:hidden;background:#0b0f17;border-bottom:1px solid #1f2937;margin:0 -12px 8px;}
+.tick-wrap{overflow:hidden;background:#0b0f17;border-bottom:1px solid #1f2937;margin:0 -12px 8px;padding-top:env(safe-area-inset-top);}
 .tick-track{display:flex;width:max-content;animation:tick 45s linear infinite}
 .tick-wrap:hover .tick-track{animation-play-state:paused}
 .tick-seg{display:flex;align-items:center;white-space:nowrap;padding:7px 0}
